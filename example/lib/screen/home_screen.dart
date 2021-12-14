@@ -1,6 +1,7 @@
-import 'package:example/data/data_helper.dart';
-import 'package:flexible_expansion_list/flexible_expansion_tile.dart';
 import 'package:flutter/material.dart';
+import 'package:flexible_expansion_list/flexible_expansion_list.dart';
+
+import '../data/data_helper.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({
