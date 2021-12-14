@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:flexible_expansion_list/flexible_expansion_tile.dart';
+import 'package:flexible_expansion_list/flexible_expansion_list.dart';
 
 typedef IndexedHeaderWidgetBuilder = Widget Function(
     BuildContext context, int index, bool isExpanded);
