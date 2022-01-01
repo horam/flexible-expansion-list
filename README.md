@@ -18,16 +18,16 @@ There is a good example project in the example folder.
         },
         fixedItemBuilder: (BuildContext context, int index) {
           return ListTile(
-            title: Text(data![index].fields.title),
-            subtitle: Text(data![index].fields.value),
+            title: Text(data![index].title),
+            subtitle: Text(data![index].subtitle),
           );
         },
         expandedItemBuilder: (BuildContext context, int index) {
           return Padding(
             padding: const EdgeInsets.symmetric(horizontal: 8),
             child: ListTile(
-              title: Text(data![index].title),
-              subtitle: Text(data![index].subtitle),
+              title: Text(data![index].fields.title),
+              subtitle: Text(data![index].fields.value),
             ),
           );
         },
