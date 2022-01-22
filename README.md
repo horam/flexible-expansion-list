@@ -33,3 +33,14 @@ There is a good example project in the example folder.
         },
       ),
 ```
+
+## Properties
+
+| Property                                              | Description                                                               | Default                                           |
+| ----------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------- |
+| **required int** itemCount                            | Total number of fixed items.                                              | **required**                                      |
+| **required IndexedWidgetBuilder** fixedItemBuilder    | Creates fixed list item widgets.                                          | **required**                                      |
+| **required IndexedWidgetBuilder** expandedItemBuilder | Create The widget(s) that should be displayed when each item is expanded. | **required**                                      |
+| **IndexedHeaderWidgetBuilder** headerBuilder          | Creates The widget that should be shown as the header for the whole list. | null                                              |
+| **Animation<double>** animation                       | Expansion and collapse animation with a value of type double.             | CurvedAnimation                                   |
+| **AnimationController** controller                    | Expansion and collapse animation controller.                              | default controller with 300 milliseconds duration |

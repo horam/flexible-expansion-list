@@ -22,10 +22,10 @@ class ExpansionListTile extends StatefulWidget {
   /// The widget(s) that should be displayed after the expansion.
   final IndexedWidgetBuilder expandableItemBuilder;
 
-  /// The controller for the animation.
+  /// Expansion and collapse animation controller.
   final AnimationController? controller;
 
-  /// An animation with a value of type `T`.
+  /// Expansion and collapse animation with a value of type double.
   final Animation<double>? animation;
 
   /// The list tile index;

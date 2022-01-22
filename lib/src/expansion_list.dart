@@ -17,13 +17,13 @@ class FlexibleExpansionList<T> extends StatefulWidget {
     this.controller,
   }) : super(key: key);
 
-  /// number of fixed items
+  /// number of main items of the list that are fixed.
   final int itemCount;
 
-  /// The widget that should be shown as the header for the whole list.
+  /// Creates The widget that should be shown as the header for the whole list.
   final IndexedHeaderWidgetBuilder? headerBuilder;
 
-  /// The widget that should be displayed both when the group
+  /// Creates widgets that should be displayed both when the group
   /// is collapsed or expanded.
   final IndexedWidgetBuilder fixedItemBuilder;
 
@@ -33,7 +33,7 @@ class FlexibleExpansionList<T> extends StatefulWidget {
   /// The controller for the animation.
   final AnimationController? controller;
 
-  /// An animation with a value of type `T`.
+  /// Expansion and collapse animation with a value of type double.
   final Animation<double>? animation;
 
   @override
