@@ -67,12 +67,10 @@ class _FlexibleExpansionListState extends State<FlexibleExpansionList> {
         ],
       );
 
-  Widget _buildTitle(BuildContext context, int index) {
-    return InkWell(
-      onTap: () {
-        setState(() => _isExpanded = !_isExpanded);
-      },
-      child: widget.headerBuilder!(context, index, _isExpanded),
-    );
-  }
+  Widget _buildTitle(BuildContext context, int index) => InkWell(
+        onTap: () {
+          setState(() => _isExpanded = !_isExpanded);
+        },
+        child: widget.headerBuilder!(context, index, _isExpanded),
+      );
 }

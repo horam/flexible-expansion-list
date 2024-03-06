@@ -94,18 +94,16 @@ class _ExpansionListTileState extends State<ExpansionListTile>
         onTap: () => _handleExpandablePart(),
       );
 
-  Widget _buildExpandableData(int index) {
-    return ClipRect(
-      child: Align(
-        alignment: Alignment.topLeft,
-        heightFactor: _animation.value,
-        child: Transform(
-          transform: Matrix4.diagonal3Values(1, _controller.value, 1),
-          child: widget.expandableItemBuilder(context, index),
+  Widget _buildExpandableData(int index) => ClipRect(
+        child: Align(
+          alignment: Alignment.topLeft,
+          heightFactor: _animation.value,
+          child: Transform(
+            transform: Matrix4.diagonal3Values(1, _controller.value, 1),
+            child: widget.expandableItemBuilder(context, index),
+          ),
         ),
-      ),
-    );
-  }
+      );
 
   void _handleExpandablePart() {
     if (_controller.status == AnimationStatus.completed ||
