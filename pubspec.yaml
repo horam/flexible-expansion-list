@@ -1,6 +1,6 @@
 name: flexible_expansion_list
 description: A Flutter widget provide expansion lists in a flexible way.
-version: 0.0.2
+version: 0.0.3
 repository: https://github.com/horam/flexible-expansion-list
 
 environment:
